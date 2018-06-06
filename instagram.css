@@ -6,6 +6,7 @@ body {
 img {
   width: 100%;
   object-fit: cover;
+  height: 300px;
 }
 
 .container {
@@ -13,3 +14,23 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px
 }
+
+@media all and (max-width: 1000px) {
+  .container {
+    grid-template-columns: 1fr 1fr; 
+  }
+  /* img {
+    height: 500px; 
+  } */
+}
+
+@media all and (max-width: 420px) {
+  .container {
+    grid-template-columns: 1fr; 
+  }
+  img {
+    height: 20px;
+  }
+}
+
+
